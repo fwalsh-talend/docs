@@ -16,6 +16,7 @@ all-types:
         stored-as: "Supported"
 
   - name: "array"
+    stitch-type: "string"
     versions: &all-strings
       - number: "1.0"
         stored-as: "STRING"
@@ -23,6 +24,7 @@ all-types:
         stored-as: "STRING"
 
   - name: "cidr"
+    stitch-type: "string"
     doc-link: "https://www.postgresql.org/docs/current/static/datatype-net-types.html#datatype-inet"
     versions:
       - number: "1.0"
@@ -31,6 +33,7 @@ all-types:
         stored-as: "Unsupported"
 
   - name: "citext"
+    stitch-type: "string"
     versions:
       - number: "1.0"
         stored-as: "STRING"
@@ -46,6 +49,7 @@ all-types:
         stored-as: "STRING"
 
   - name: "inet"
+    stitch-type: "string"
     doc-link: "https://www.postgresql.org/docs/current/static/datatype-net-types.html#datatype-inet"
     versions:
       - number: "1.0"
@@ -54,6 +58,7 @@ all-types:
         stored-as: "Unsupported"
 
   - name: "ip"
+    stitch-type: "string"
     versions:
       - number: "1.0"
         stored-as: "STRING"
@@ -61,12 +66,15 @@ all-types:
         stored-as: "Unsupported"
 
   - name: "json"
+    stitch-type: "string"
     versions: *all-strings
 
   - name: "jsonb"
+    stitch-type: "string"
     versions: *all-strings
 
   - name: "macaddr"
+    stitch-type: "string"
     doc-link: "https://www.postgresql.org/docs/current/static/datatype-net-types.html#datatype-inet"
     versions:
       - number: "1.0"
@@ -75,6 +83,7 @@ all-types:
         stored-as: "Unsupported"
 
   - name: "money"
+    stitch-type: "string"
     doc-link: "https://www.postgresql.org/docs/10/static/datatype-money.html"
     versions:
       - number: "1.0"
@@ -83,5 +92,6 @@ all-types:
         stored-as: "Unsupported"
 
   - name: "uuid"
+    stitch-type: "string"
     https: "https://www.postgresql.org/docs/10/static/datatype-uuid.html"
     versions: *all-strings

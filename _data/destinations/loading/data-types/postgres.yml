@@ -1,0 +1,51 @@
+# -------------------------- #
+#   PostgreSQL Data Types    #
+# -------------------------- #
+
+bigint:
+  stitch-type: "bigint"
+  stored-as: "bigint"
+  doc-link: "https://www.postgresql.org/docs/10/datatype-numeric.html#DATATYPE-INT"
+  suffix: "bi"
+
+boolean:
+  stitch-type: "boolean"
+  stored-as: "boolean"
+  doc-link: "https://www.postgresql.org/docs/10/datatype-boolean.html"
+  suffix: "bo"
+
+date:
+  stitch-type: "date"
+  stored-as: "timestamp without time zone"
+  doc-link: "https://www.postgresql.org/docs/10/datatype-datetime.html"
+  suffix: "ti"
+
+double:
+  stitch-type: "double"
+  stored-as: "double precision"
+  doc-link: "https://www.postgresql.org/docs/10/datatype-numeric.html"
+  suffix: "do"
+
+float:
+  stitch-type: "float"
+  stored-as: "double precision"
+  doc-link: "https://www.postgresql.org/docs/10/datatype-numeric.html"
+  suffix: "do"
+
+integer:
+  stitch-type: "integer"
+  stored-as: "integer"
+  doc-link: "https://www.postgresql.org/docs/10/datatype-numeric.html#DATATYPE-INT"
+  suffix: "it"
+
+number:
+  stitch-type: "number"
+  stored-as: "decimal(precision, scale)"
+  doc-link: "https://www.postgresql.org/docs/10/datatype-numeric.html"
+  suffix: "de"
+
+string:
+  stitch-type: "string"
+  stored-as: "text"
+  doc-link: "https://www.postgresql.org/docs/10/datatype-character.html"
+  suffix: "st"

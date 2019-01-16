@@ -1,0 +1,51 @@
+# -------------------------- #
+#     Panoply Data Types     #
+# -------------------------- #
+
+bigint:
+  stitch-type: "bigint"
+  stored-as: "bigint"
+  doc-link: "https://docs.aws.amazon.com/redshift/latest/dg/r_Numeric_types201.html#r_Numeric_types201-integer-types"
+  suffix: "bi"
+
+boolean:
+  stitch-type: "boolean"
+  stored-as: "boolean"
+  doc-link: "https://docs.aws.amazon.com/redshift/latest/dg/r_Boolean_type.html"
+  suffix: "bo"
+
+date:
+  stitch-type: "date"
+  stored-as: "timestamp without time zone"
+  doc-link: "https://docs.aws.amazon.com/redshift/latest/dg/r_Datetime_types.html"
+  suffix: "ti"
+
+double:
+  stitch-type: "double"
+  stored-as: "double precision"
+  doc-link: "https://docs.aws.amazon.com/redshift/latest/dg/r_Numeric_types201.html#r_Numeric_types201-floating-point-types"
+  suffix: "do"
+
+float:
+  stitch-type: "double"
+  stored-as: "double precision"
+  doc-link: "https://docs.aws.amazon.com/redshift/latest/dg/r_Numeric_types201.html#r_Numeric_types201-floating-point-types"
+  suffix: "do"
+
+integer:
+  stitch-type: "integer"
+  stored-as: "integer"
+  doc-link: "https://docs.aws.amazon.com/redshift/latest/dg/r_Numeric_types201.html#r_Numeric_types201-integer-types"
+  suffix: "it"
+
+number:
+  stitch-type: "number"
+  stored-as: "decimal(precision, scale)"
+  doc-link: "https://docs.aws.amazon.com/redshift/latest/dg/r_Numeric_types201.html#r_Numeric_types201-decimal-or-numeric-type"
+  suffix: "de"
+
+string:
+  stitch-type: "string"
+  stored-as: "varchar(n)"
+  doc-link: "https://docs.aws.amazon.com/redshift/latest/dg/r_Character_types.html#r_Character_types-varchar-or-character-varying"
+  suffix: "st"

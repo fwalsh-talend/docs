@@ -1,0 +1,51 @@
+# -------------------------- #
+#   Azure SQL DW Data Types  #
+# -------------------------- #
+
+bigint:
+  sttich-type: "bigint"
+  stored-as: *bigint-map
+  doc-link: &bigint-doc "https://docs.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql?view=sql-server-2017"
+  suffix: "bi"
+
+boolean:
+  sttich-type: "boolean"
+  stored-as: "bit"
+  doc-link: "https://docs.microsoft.com/en-us/sql/t-sql/data-types/bit-transact-sql?view=sql-server-2017"
+  suffix: "bo"
+
+date:
+  sttich-type: "date"
+  stored-as: "datetime"
+  doc-link: "https://docs.microsoft.com/en-us/sql/t-sql/data-types/datetime-transact-sql?view=sql-server-2017"
+  suffix: "inst"
+
+double:
+  sttich-type: "double"
+  stored-as: "float"
+  doc-link: &double-doc "https://docs.microsoft.com/en-us/sql/t-sql/data-types/float-and-real-transact-sql?view=sql-server-2017"
+  suffix: "fl"
+
+float:
+  sttich-type: "float"
+  stored-as: "float"
+  doc-link: *double-doc
+  suffix: "fl"
+
+integer:
+  sttich-type: "integer"
+  stored-as: "integer"
+  doc-link: *bigint-doc
+  suffix: "bi"
+
+number:
+  sttich-type: "number"
+  stored-as: *decimal-map
+  doc-link: "https://docs.microsoft.com/en-us/sql/t-sql/data-types/decimal-and-numeric-transact-sql?view=sql-server-2017"
+  suffix: "de"
+
+string:
+  sttich-type: "string"
+  stored-as: "varchar"
+  doc-link: "https://docs.microsoft.com/en-us/sql/t-sql/data-types/char-and-varchar-transact-sql?view=sql-server-2017"
+  suffix: "st"

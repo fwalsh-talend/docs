@@ -1,0 +1,62 @@
+# -------------------------- #
+#    Snowflake Data Types    #
+# -------------------------- #
+
+specific-types:
+  - name: "variant"
+
+
+
+bigint:
+  stitch-type: "bigint"
+  stored-as: "integer"
+  doc-link: &integer-doc "https://docs.snowflake.net/manuals/sql-reference/data-types-numeric.html#int-integer-bigint-smallint-tinyint-byteint"
+  suffix: "IT"
+
+boolean:
+  stitch-type: "boolean"
+  stored-as: "boolean"
+  doc-link: "https://docs.snowflake.net/manuals/sql-reference/data-types-logical.html#boolean"
+  suffix: "BO"
+
+date:
+  stitch-type: "date"
+  stored-as: "timestamp_tz"
+  doc-link: "https://docs.snowflake.net/manuals/sql-reference/data-types-datetime.html#timestamp-ltz-timestamp-ntz-timestamp-tz"
+  suffix: "TI"
+
+double:
+  stitch-type: "double"
+  stored-as: "float"
+  doc-link: &float-doc "https://docs.snowflake.net/manuals/sql-reference/data-types-numeric.html#float-float4-float8"
+  suffix: "FL"
+
+float:
+  stitch-type: "float"
+  stored-as: "float"
+  doc-link: *float-doc
+  suffix: "FL"
+
+integer:
+  stitch-type: "integer"
+  stored-as: "integer"
+  doc-link: *integer-doc
+  suffix: "IT"
+
+number:
+  stitch-type: "number"
+  stored-as: "decimal(precision, scale)"
+  doc-link: "https://docs.snowflake.net/manuals/sql-reference/data-types-numeric.html#decimal-numeric"
+  suffix: "DE"
+
+string:
+  stitch-type: "string"
+  stored-as: "varchar(n)"
+  doc-link: "https://docs.snowflake.net/manuals/sql-reference/data-types-text.html#varchar"
+  suffix: "ST"
+
+variant:
+  stitch-type: ""
+  stored-as: "variant"
+  doc-link: "https://docs.snowflake.net/manuals/sql-reference/data-types-semistructured.html#variant"
+  suffix: "VA"

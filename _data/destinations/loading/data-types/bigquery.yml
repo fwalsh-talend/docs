@@ -1,0 +1,75 @@
+# -------------------------- #
+#    BigQuery Data Types     #
+# -------------------------- #
+
+specific-types:
+  - name: "array"
+  - name: "numeric"
+  - name: "null"
+  - name: "record"
+
+array:
+  stitch-type: ""
+  stored-as: "array"
+  doc-link: "https://cloud.google.com/bigquery/docs/reference/standard-sql/data-types#array-type"
+  suffix: "ar"
+
+bigint:
+  stitch-type: "bigint"
+  stored-as: "integer"
+  doc-link: &integer-doc "https://cloud.google.com/bigquery/docs/reference/standard-sql/data-types#integer-type"
+  suffix: "it"
+
+boolean:
+  stitch-type: "boolean"
+  stored-as: "boolean"
+  doc-link: "https://cloud.google.com/bigquery/docs/reference/standard-sql/data-types#boolean-type"
+  suffix: "bo"
+
+date:
+  stitch-type: "date"
+  stored-as: "timestamp"
+  doc-link: "https://cloud.google.com/bigquery/docs/reference/standard-sql/data-types#timestamp-type"
+  suffix: "ti"
+
+double:
+  stitch-type: "double"
+  stored-as: ""
+  doc-link: ""
+  suffix: ""
+
+float:
+  stitch-type: "float"
+  stored-as: "float"
+  doc-link: "https://cloud.google.com/bigquery/docs/reference/standard-sql/data-types#floating-point-type"
+  suffix: "do"
+
+integer:
+  stitch-type: "integer"
+  stored-as: "integer"
+  doc-link: *integer-doc
+  suffix: "it"
+
+# null:
+#   stitch-type: ""
+#   stored-as: "null"
+#   doc-link: ""
+#   suffix: "nu"
+
+number:
+  stitch-type: "number"
+  stored-as: "numeric"
+  doc-link: "https://cloud.google.com/bigquery/docs/reference/standard-sql/data-types#numeric-type"
+  suffix: "nu"
+
+record:
+  stitch-type: ""
+  stored-as: "record"
+  doc-link: ""
+  suffix: "re"
+
+string:
+  stitch-type: "string"
+  stored-as: "string"
+  doc-link: "https://cloud.google.com/bigquery/docs/reference/standard-sql/data-types#string-type"
+  suffix: "st"

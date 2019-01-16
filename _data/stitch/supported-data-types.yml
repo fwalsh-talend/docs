@@ -2,75 +2,119 @@
 #   COMMON SUPPORTED DATA TYPES #
 # ------------------------------#
 
-## The data types supported by Stitch for ALL integrations.
+## The data integration-types supported by Stitch for ALL integrations.
 
 ## If a column shows as 'Unsupported' in the UI,
-## it may be an unsupported data type.
+## it may be an unsupported data integration-type.
 
-## NOTE: This list does NOT include data types that are supported by specific integrations.
-## Refer to the files in _data/taps/extraction/data-types for integration-specific data types.
+## NOTE: This list does NOT include data integration-types that are supported by specific integrations.
+## Refer to the files in _data/taps/extraction/data-integration-types for integration-specific data integration-types.
 
 last-updated: "June 19, 2018"
 
-data-types:  
-  - name: "BIGINT"
-    type: "common"
+stitch-types:
+  - name: "bigint"
+    category: "numeric"
+  - name: "boolean"
+    category: "boolean"
+  - name: "date"
+    category: "date-and-time"
+  - name: "double"
+    category: "numeric"
+  - name: "float"
+    category: "numeric"
+  - name: "integer"
+    category: "numeric"
+  - name: "number"
+    category: "numeric"
+  - name: "string"
+    category: "string"
 
-  - name: "BIT"
-    type: "common"
+supported-source-types:  
+  - name: "bigint"
+    integration-type: "any"
+    stitch-type: "bigint"
 
-  - name: "CHAR"
-    type: "common"
+  - name: "bit"
+    integration-type: "any"
+    stitch-type: "boolean"
 
-  - name: "DATE"
-    type: "common"
+  - name: "boolean"
+    integration-type: "any"
+    stitch-type: "boolean"
 
-  - name: "DECIMAL"
-    type: "common"
+  - name: "char"
+    integration-type: "databases"
+    stitch-type: "string"
 
-  - name: "DOUBLE"
-    type: "common"
+  - name: "date"
+    integration-type: "any"
+    stitch-type: "date"
 
-  - name: "FLOAT"
-    type: "common"
+  - name: "decimal"
+    integration-type: "any"
+    stitch-type: "number"
 
-  - name: "INTEGER"
-    type: "common"
+  - name: "double"
+    integration-type: "any"
+    stitch-type: "double"
 
-  - name: "LONGVARCHAR"
-    type: "common"
+  - name: "float"
+    integration-type: "any"
+    stitch-type: "float"
 
-  - name: "LONGNVARCHAR"
-    type: "common"
+  - name: "integer"
+    integration-type: "any"
+    stitch-type: "integer"
 
-  - name: "NCHAR"
-    type: "common"
+  - name: "longvarchar"
+    integration-type: "databases"
+    stitch-type: "string"
 
-  - name: "NVARCHAR"
-    type: "common"
+  - name: "longnvarchar"
+    integration-type: "databases"
+    stitch-type: "string"
 
-  - name: "NUMERIC"
-    type: "common"
+  - name: "nchar"
+    integration-type: "databases"
+    stitch-type: "string"
 
-  - name: "REAL"
-    type: "common"
+  - name: "nvarchar"
+    integration-type: "databases"
+    stitch-type: "string"
 
-  - name: "SMALLINT"
-    type: "common"
+  - name: "numeric"
+    integration-type: "any"
+    stitch-type: "number"
 
-  - name: "TIME"
-    type: "common"
+  - name: "real"
+    integration-type: "any"
+    stitch-type: "float"
 
-  - name: "TIMESTAMP"
-    type: "common"
+  - name: "smallint"
+    integration-type: "databases"
+    stitch-type: "integer"
 
-  - name: "TINYINT"
-    type: "common"
+  - name: "time"
+    integration-type: "any"
+    stitch-type: "date"
+
+  - name: "timestamp"
+    integration-type: "any"
+    stitch-type: "date"
+
+  - name: "tinyint"
+    integration-type: "any"
+    stitch-type: "integer"
+
     doc-link: "{{ link.troubleshooting.mysql-tinyint-bit }}"
-    notes: "Under certain circumstances, Stitch may store this data type as `BIT(1)/boolean`. Click the link for more details."
+    notes: "Under certain circumstances, Stitch may store this data integration-type as `BIT(1)/boolean`. Click the link for more details."
 
-  - name: "VARBINARY"
-    type: "common"
 
-  - name: "VARCHAR"
-    type: "common"
+  - name: "varbinary"
+    integration-type: "databases"
+    stitch-type: "integer"
+
+  - name: "varchar"
+    integration-type: "any"
+    stitch-type: "string"
